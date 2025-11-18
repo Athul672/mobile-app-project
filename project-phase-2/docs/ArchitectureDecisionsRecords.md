@@ -98,6 +98,131 @@ We want to make an app that will show the current temperature and a 5-day foreca
 
 All of the information will be displayed on the same page. 
 
- 
+
+
+
+
+
+Navigation Strategy - Tab Navigation
+
+Context
+ Our team is building a Weather Forecast mobile app for Android using React Native. The app will present:
+
+  Current weather conditions
+
+
+  A 5-day forecast
+
+
+  Settings page (e.g., temperature units, user location preferences, light/dark mode)
+
+
+ The navigation structure must allow users to move between these core features quickly. As a student team operating under a short project timeline, our architectural decisions need to:
+  Match our skill level (mostly familiar with React/React Native)
+
+
+  Keep complexity low
+
+
+  Avoid unnecessary features that go beyond the scope of the course.
+
+
+ We considered several navigation patterns commonly used in mobile apps:
+Stack Navigation
+
+
+  Drawer Navigation
+
+
+  Tab Navigation
+
+
+ Each option supports different user interface expectations.
+Decision
+ We will use Bottom Tab Navigation as our primary navigation strategy, implemented using React Navigation.
+Rationale
+ Our decision is based on the following factors:
+ Business Priorities
+  Users must quickly switch between weather views (today vs. 5-day forecast).
+
+
+  Navigation should be simple and consistent across Android devices.
+
+
+  The app should feel familiar to typical weather-app users, who expect tabs.
+
+
+ Team Skillset
+  The team is already experienced with React and basic React Navigation.
+
+
+  Tab navigation has a smaller learning curve compared to drawers or stacks.
+
+
+  Faster to implement, which supports our limited timeline.
+
+
+ Pros
+  Highly effective for apps with 2–4 primary screens.
+
+
+  Always-visible tabs make switching between weather views effortless.
+
+
+  Faster development due to simple configuration.
+
+
+  Supports icons and labels, improving accessibility and usability.
+
+
+  Works well for mobile apps that do not require deep navigation flows.
+
+
+ Cons
+  Tabs appear on all main screens, even when content is scroll-heavy.
+
+
+  Not suitable if the app grows to contain many feature screens (would require stacking or drawers later).
+
+
+
+  Despite these minor drawbacks, tab navigation aligns best with our user needs and course scope.
+
+Consequences
+ Effects of This Decision
+  Users can move between the three main screens with a single tap.
+
+
+  We must design screens with enough vertical space to account for the tab bar.
+
+
+  All core screens will remain at the top level of the app’s navigation structure.
+
+
+Outputs / Follow-Ups
+ Future ADRs may be required only if we add nested screens (e.g., detailed weather info, saved locations).
+
+
+ We must create a clear icon set for each tab (e.g., home, calendar, settings).
+
+
+ Team members need to configure React Navigation dependencies early in the development cycle.
+
+
+After-Action Review Plan
+ One month after implementation (or near project end), we will review whether tab navigation:
+
+
+  Supports user needs
+
+
+  Works well with the final UI
+
+
+  Needs extension with nested stack screens
+
+
+
+
 
  
