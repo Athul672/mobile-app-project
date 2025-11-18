@@ -35,15 +35,11 @@ React Native is a strong choice for a weather app because it allows fast develop
 
 Consequences  
 
-    We can build the weather app faster because we already know JavaScript and React. 
-
-    It is easy to use GPS and location services, which are important for showing local weather. 
-
-    Many libraries help us fetch real-time weather data from APIs. 
-
-    Lots of tutorials and community support make building weather features easier. 
-
-    Some advanced Android features might need extra setup, but they are not required for our weather app. 
+We can build the weather app faster because we already know JavaScript and React. 
+It is easy to use GPS and location services, which are important for showing local weather. 
+Many libraries help us fetch real-time weather data from APIs. 
+Lots of tutorials and community support make building weather features easier. 
+Some advanced Android features might need extra setup, but they are not required for our weather app. 
 
  
 
