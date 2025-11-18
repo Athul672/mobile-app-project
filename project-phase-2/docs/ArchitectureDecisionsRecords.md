@@ -46,6 +46,7 @@ Navigation strategy
 
  
 Hardware: GPS, Speaker, Fingerprint scanner, etc.  
+Decision 
 
 Our weather app will not use any device hardware. 
 
