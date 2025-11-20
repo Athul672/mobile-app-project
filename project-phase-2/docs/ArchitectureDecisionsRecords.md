@@ -42,68 +42,6 @@ Some advanced Android features might need extra setup, but they are not required
  
 
  
-Navigation strategy 
-
- 
-Hardware: GPS, Speaker, Fingerprint scanner, etc.  
-Decision 
-
-Our weather app will not use any device hardware. 
-
-Context 
-
-The weather app only needs to show weather information from an online API. It does not need the camera, microphone, GPS, or any other hardware to work. Keeping the app simple helps us finish it faster. 
-
-Options Considered 
-
-Use GPS 
-Use sensors 
-Use camera or microphone 
-Use no hardware (chosen) 
-
-Rationale 
-
-We are not using hardware because: 
-
-The app works well without it. 
-It keeps the project easy and simple. 
-No permission is needed. 
-Faster development and fewer errors. 
-
-Consequences 
-
-Easy to build 
-No need to ask for permissions 
-Fewer problems and faster testing 
-Users must type in the location instead of it being detected automatically 
-
- 
-
- 
-
- 
-
-Database storage: Local (encrypted or unencrypted), remote, or none.  
-
-Status 
-
-Decided not to use database storage. Open to using database storage if 100% needed. 
-
-Decision 
-
-Decided not to use database storage for our mobile weather app. 
-
-Assumptions 
-
-We want to make an app that will show the current temperature and a 5-day forecast. 
-
-All of the information will be displayed on the same page. 
-
-
-
-
-
-
 Navigation Strategy - Tab Navigation
 
 Context
@@ -222,8 +160,72 @@ After-Action Review Plan
 
   Needs extension with nested stack screens
 
-
-
-
-
  
+Hardware: GPS, Speaker, Fingerprint scanner, etc.  
+Decision 
+
+Our weather app will not use any device hardware. 
+
+Context 
+
+The weather app only needs to show weather information from an online API. It does not need the camera, microphone, GPS, or any other hardware to work. Keeping the app simple helps us finish it faster. 
+
+Options Considered 
+
+Use GPS 
+Use sensors 
+Use camera or microphone 
+Use no hardware (chosen) 
+
+Rationale 
+
+We are not using hardware because: 
+
+The app works well without it. 
+It keeps the project easy and simple. 
+No permission is needed. 
+Faster development and fewer errors. 
+
+Consequences 
+
+Easy to build 
+No need to ask for permissions 
+Fewer problems and faster testing 
+Users must type in the location instead of it being detected automatically 
+ 
+
+Database storage: Local (encrypted or unencrypted), remote, or none.  
+
+Status 
+
+Decided not to use database storage. Open to using database storage only if 100% needed. 
+
+Decision 
+
+Decided not to use database storage for our mobile weather app. 
+
+Assumptions 
+
+We want to make an app that will show the current temperature and a 5-day forecast. 
+
+We are assuming that there will be no need to store any of the city’s data. 
+
+We are assuming that the user customization is minimal. 
+
+Constraints 
+
+Choosing no database storage limits us to not being able to keep the city that they chose the last time they were on the app. Choosing no database storage means that we will not be able to seamlessly change cities that the user has already looked at. 
+
+Positions 
+
+We thought about using a database storage to allow us to store cities data to make switching back to that city more seamless.  
+
+Reason for choice 
+
+We choose not to use a database storage because of our weaknesses of second-guessing ourselves, and our perfectionism, using a database storage would lead to scope creep. 
+
+
+
+
+
+
